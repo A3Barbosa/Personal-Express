@@ -4,3 +4,91 @@ body{
 h3{
   margin-top: 40px;
 }
+/* 
+.hidden{
+display:none;
+} */
+
+
+#check{
+height:150px;
+width:20%;
+}
+
+.box{
+height:600px;
+width:100%;
+float:left;
+}
+
+.box1{
+height:400px;
+width:33.333%;
+float:left;
+}
+
+.box2{
+  height:400px;
+  width:33.333%;
+  float:left;
+  }
+
+  .box3{
+    height:400px;
+    width:33.333%;
+    float:left;
+    }
+
+
+
+img{
+width:85%;
+}
+
+.mi{
+  height:10px;
+  width:10%;
+  float:left;
+}
+.one{
+height:40px;
+width:20%;
+float:left;
+}
+
+.two{
+height:20px;
+width:16%;
+float:left; 
+margin-left:10%;
+}
+
+.three{
+  height:22px;
+  width:16%;
+  float:left; 
+  margin-left:74%;
+  margin-top: -7%;
+  }
+
+.mini{
+height:100px;
+width:10%;
+float:left;
+}
+
+.miniTwo{
+  height:30px;
+  width:10%;
+  float:left;
+  margin-left:1%;
+  }
+
+
+  .miniThree{
+    height:100px;
+    width:10%;
+    float:left;
+    margin-left:91%;
+    margin-top: -7%;
+  }

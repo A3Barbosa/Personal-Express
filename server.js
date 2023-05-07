@@ -31,7 +31,24 @@ app.get('/', (req, res) => {
 })
 
 app.post('/comments', (req, res) => {
-  db.collection('comments').insertOne({name: req.body.name, thoughts: req.body.thoughts, theStar:0}, (err, result) => {
+  db.collection('comments').insertOne({name: req.body.name, thoughts: req.body.thoughts, }, (err, result) => {
+    if (err) return console.log(err)
+    console.log('saved to database')
+    res.redirect('/')
+  })
+})
+
+app.post('/second', (req, res) => {
+  db.collection('comments').insertOne({answerOne: req.body.answerone, }, (err, result) => {
+    if (err) return console.log(err)
+    console.log('saved to database')
+    res.redirect('/')
+  })
+})
+
+
+app.post('/third', (req, res) => {
+  db.collection('comments').insertOne({answerThree: req.body.answerThree, }, (err, result) => {
     if (err) return console.log(err)
     console.log('saved to database')
     res.redirect('/')
@@ -42,7 +59,7 @@ app.put('/comments', (req, res) => {
   db.collection('comments')
   .findOneAndUpdate({name: req.body.name, thoughts: req.body.thoughts}, {
     $set: {
-      theStar:req.body.theStar + 1
+      
     }
   }, {
     sort: {_id: -1},
